@@ -1,5 +1,6 @@
 package com.teamsparta.todo3.domain.title.controller
 
+import com.teamsparta.todo3.domain.exception.dto.ModelNotFoundException
 import com.teamsparta.todo3.domain.title.dto.CreateTitleRequest
 import com.teamsparta.todo3.domain.title.dto.TitleResponse
 import com.teamsparta.todo3.domain.title.dto.UpdateTitleRequest
@@ -7,6 +8,7 @@ import com.teamsparta.todo3.domain.title.service.TitleService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.DeleteMapping
+import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
